@@ -1,3 +1,4 @@
+
 <html>
 <center>
     <body>
@@ -14,7 +15,7 @@
 		canv = document.getElementById("gc");
 		ctx = canv.getContext("2d"); // create context 2d
 		document.addEventListener("keydown", keyPush); // Set key push
-		document.getElementById("score").innerHTML = 0; // Set score po
+		document.getElementById("score").innerHTML = 0; // Set score 
 		setInterval(game, 100); // Set speed
 	}
 	positionX = positionY = 10;
