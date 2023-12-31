@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main(void)
+{
+float eletric ;
+int watt,n;
+float hour,unit;
+cout << "\n\n";
+cout << "\t\t Programe For Calculate Electricity  \n======================================================================\n\n";
+cout << "   Power(watt0 : ";
+cin >> watt;
+cout << "   Number of Electric appliance : ";
+cin >> n;
+cout << "   Hour of using in one day :";
+cin >> hour;
+unit = (watt*n*hour)/1000;
+cout << "   Unit in one day : ";
+cout << unit;
+if (unit<=5)
+{ eletric = 4.96 ;}
+else if (unit<=15)
+{ eletric = unit * 0.7124; }
+else if (unit<=25)
+{ eletric = unit * 0.8993; }
+else if (unit<=35)
+{ eletric = unit * 1.1516; }
+else if (unit<=100)
+{ eletric = unit * 1.5348; }
+else if (unit<=150)
+{ eletric = unit * 1.6282; }
+else if (unit<=400)
+{ eletric = unit * 2.1329; }
+else
+{ eletric = unit * 2.4226; }
+cout << "\n   eletric = ";
+cout << eletric ;
+cout << "\n\n======================================================================\n\n";
+return 0;
+}
