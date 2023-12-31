@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    const float PASS_PERCENT = 50.0;
+    float student_score,max_score,student_percent;
+    
+    cout << "\n====================================================================\n\n";
+    cout << "\nEnter student score : ";
+    cin >> student_score;
+    cout << "Enter max score : ";
+    cin >> max_score;
+                         
+    student_percent =  (student_score / max_score) * 100.0;
+    cout << student_percent << " % ";
+    if(student_percent >= PASS_PERCENT)
+    {
+       cout << " Pass";                
+    }
+    else
+    {
+       cout << " Fail"; 
+    }
+    cout << endl << endl;
+    system("pause");
+    cout << "\n====================================================================\n\n";
+   
+    return 0;
+}
+
