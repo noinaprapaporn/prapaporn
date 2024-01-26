@@ -7,7 +7,7 @@ int watt,n;
 float hour,unit;
 cout << "\n\n";
 cout << "\t\t Programe For Calculate Electricity  \n======================================================================\n\n";
-cout << "   Power(watt0 : ";
+cout << "   Power(watt) : ";
 cin >> watt;
 cout << "   Number of Electric appliance : ";
 cin >> n;
